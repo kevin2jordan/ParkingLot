@@ -7,12 +7,14 @@ import com.learn.parkinglot.model.ParkingFloor;
 import com.learn.parkinglot.model.ParkingLot;
 import com.learn.parkinglot.model.parkingspot.ParkingSpace;
 import lombok.NonNull;
+import org.springframework.stereotype.Service;
 
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
+@Service
 public class ParkingLotService {
 
     private final Map<String, ParkingLot> parkingLots = new HashMap<>();
